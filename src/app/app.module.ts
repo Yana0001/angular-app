@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { ServerComponent } from "./server/server.component";
 import { PracticeComponent } from "./practice/practice.component";
 import { ServersComponent } from './servers/servers.component';
-import { InstructionComponent } from "./instruction/instruction.component";
-import { Instruction2Component } from './instruction_2/instruction_2.component';
+import { SuccessAlert } from './success/success.component';
+import { WarningAlert } from './warning/warning.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,8 @@ import { Instruction2Component } from './instruction_2/instruction_2.component';
     ServerComponent,
     PracticeComponent,
     ServersComponent,
-    InstructionComponent,
-    Instruction2Component,
+    WarningAlert,
+    SuccessAlert,
   ],
   imports: [
     BrowserModule

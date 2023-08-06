@@ -12,6 +12,7 @@ export class ServersComponent {
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
+       console.log('You can add server');
     }, 2000);
   }
 }

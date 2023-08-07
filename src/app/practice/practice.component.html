@@ -1,1 +1,23 @@
-<p>I`m your Practice Component</p>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <label for="inpt">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="inpt"
+        [(ngModel)]="username"
+        (input)="onAllowInput()"
+      />
+      <p>{{ username }}</p>
+      <button
+        class="btn btn-primary"
+        id="button"
+        [disabled]="!allowInput"
+        (click)="onClickReset()"
+      >
+        Reset name
+      </button>
+    </div>
+  </div>
+</div>

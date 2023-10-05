@@ -12,6 +12,7 @@ export class ServersComponent {
   serverCreationStatus = 'No server was created!';
   serverName = 'Testserver';
   serverCreated = false;
+  
 
   constructor() {
     setTimeout(() => {

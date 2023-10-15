@@ -1,4 +1,14 @@
-<button class="btn btn-primary" (click)="showDetails = !showDetails">
+<!-- <button class="btn btn-primary" (click)="showDetails = !showDetails">
+  Display Details
+</button> -->
+<button class="btn btn-primary" (click)="onToggleDetails()">
   Display Details
 </button>
 <p *ngIf="showDetails">Secret password = LOVE</p>
+<div
+  *ngFor="let logItem of log"
+  [ngStyle]="{ backgroundColor: logItem >= 5 ? 'blue' : 'transparent' }"
+  [ngClass]="{ 'white-text': logItem >= 5 }"
+>
+  {{ logItem }}
+</div>
